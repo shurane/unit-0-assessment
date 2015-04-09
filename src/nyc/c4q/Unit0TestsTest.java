@@ -227,10 +227,10 @@ public class Unit0TestsTest {
     }
 
     @Test
-    public void testChangeTuringsAddressToPrinceton() throws Exception {
+    public void testChangeTuringsCityToPrinceton() throws Exception {
         HashMap<String, Person> people = Unit0Tests.declareAndReturnHashmapOfTuringAndHopper();
         assertEquals(people.get("Turing").getCity().getName(), "London");
-        Unit0Tests.changeTuringsAddresstoPrinceton(people);
+        Unit0Tests.changeTuringsCityToPrinceton(people);
         assertEquals(people.get("Turing").getCity().getName(), "Princeton");
     }
 
